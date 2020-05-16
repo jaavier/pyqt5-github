@@ -1,4 +1,3 @@
-import sys
 from PyQt5.QtWidgets import QWidget, QApplication
 
 class Form(QWidget):
@@ -7,7 +6,7 @@ class Form(QWidget):
     self.setGeometry(0, 0, 300, 300)
 
 if __name__ == "__main__":
-    app = QApplication(sys.argv)
+    app = QApplication([])
     form = Form()
     form.show()
-    sys.exit(app.exec_())
+    app.exec_()
